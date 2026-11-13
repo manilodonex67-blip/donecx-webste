@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DONECX | Digital Solutions</title>
+<meta name="description" content="DONECX creates affordable, professional websites and digital solutions for businesses, schools and individuals.">
+
+<style>
+:root {
+  --purple: #8247cf;
+  --dark: #100d18;
+  --white: #ffffff;
+  --muted: #aaa1b7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--dark);
+  color: var(--white);
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 8%;
+  border-bottom: 1px solid #30263c;
+}
+
+.logo {
+  font-size: 27px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.logo span { color: var(--purple); }
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 22px;
+  font-size: 14px;
+}
+
+nav a:hover { color: #b98cf0; }
+
+.hero {
+  min-height: 580px;
+  padding: 110px 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background:
+    radial-gradient(circle at 85% 30%, #42215f 0%, transparent 35%),
+    var(--dark);
+}
+
+.tag {
+  color: #c59af4;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 6vw, 70px);
+  line-height: 1.12;
+  max-width: 780px;
+  margin: 20px 0;
+}
+
+.hero h1 span { color: #a875e7; }
+
+.hero p {
+  color: var(--muted);
+  max-width: 540px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--purple);
+  color: white;
+  text-decoration: none;
+  padding: 14px 25px;
+  border-radius: 6px;
+  font-weight: bold;
+  width: fit-content;
+}
+
+.btn:hover { background: #6933ad; }
+
+section { padding: 85px 8%; }
+
+.section-title {
+  font-size: 35px;
+  margin-bottom: 12px;
+}
+
+.section-description {
+  color: var(--muted);
+  margin-bottom: 35px;
+}
+
+.services {
+  background: #171220;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card {
+  padding: 27px;
+  background: #21192d;
+  border: 1px solid #382849;
+  border-radius: 10px;
+}
+
+.card .symbol {
+  font-size: 30px;
+  color: #b78bea;
+}
+
+.card h3 { margin: 12px 0; }
+
+.card p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.project {
+  background: #21192d;
+  border-radius: 10px;
+  padding: 28px;
+  border: 1px solid #382849;
+}
+
+.project small {
+  color: #c49aee;
+}
+
+.project p {
+  color: var(--muted);
+  margin-top: 10px;
+}
+
+.about {
+  background: #171220;
+}
+
+.about p {
+  max-width: 750px;
+  color: var(--muted);
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact p {
+  color: var(--muted);
+  margin: 15px auto 25px;
+}
+
+footer {
+  border-top: 1px solid #30263c;
+  text-align: center;
+  padding: 25px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+@media (max-width: 650px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav a {
+    margin: 0 7px;
+    font-size: 12px;
+  }
+
+  .hero { padding: 80px 7%; }
+
+  section { padding: 65px 7%; }
+
+  .grid, .projects {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">DONECX<span>.</span></div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="tag">WELCOME TO DONECX DIGITAL SOLUTIONS</div>
+
+  <h1>Your business deserves a <span>powerful online presence.</span></h1>
+
+  <p>
+    We create modern, professional and affordable
+    websites for businesses, schools, organizations
+    and individuals.
+  </p>
+
+  <a href="#contact" class="btn">Work With Us →</a>
+</section>
+
+<section class="services" id="services">
+  <h2 class="section-title">Our Services</h2>
+
+  <p class="section-description">
+    Digital solutions designed to help you grow.
+  </p>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="symbol">⌘</div>
+      <h3>Website Development</h3>
+      <p>Modern, responsive websites for businesses and individuals.</p>
+    </div>
+
+    <div class="card">
+      <div class="symbol">✦</div>
+      <h3>Digital Design</h3>
+      <p>Creative designs and visual identities for growing brands.</p>
+    </div>
+
+    <div class="card">
+      <div class="symbol">▣</div>
+      <h3>Web Applications</h3>
+      <p>Useful digital tools designed to solve everyday problems.</p>
+    </div>
+
+    <div class="card">
+      <div class="symbol">⌂</div>
+      <h3>School Websites</h3>
+      <p>Professional online platforms for educational institutions.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">Our Projects</h2>
+
+  <p class="section-description">
+    Explore our demonstration designs.
+  </p>
+
+  <div class="projects">
+
+    <div class="project">
+      <small>DEMO PROJECT 01</small>
+      <h3>Business Website</h3>
+      <p>A concept website for a modern local business.</p>
+    </div>
+
+    <div class="project">
+      <small>DEMO PROJECT 02</small>
+      <h3>Education Website</h3>
+      <p>A concept platform for a school or educational institution.</p>
+    </div>
+
+    <div class="project">
+      <small>DEMO PROJECT 03</small>
+      <h3>Personal Portfolio</h3>
+      <p>A concept portfolio for an individual professional.</p>
+    </div>
+
+    <div class="project">
+      <small>DEMO PROJECT 04</small>
+      <h3>Online Store</h3>
+      <p>A concept storefront for a growing retail brand.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="about" id="about">
+  <h2 class="section-title">About DONECX</h2>
+
+  <p>
+    DONECX is a developing digital solutions brand
+    focused on making professional digital services
+    accessible. Our goal is to help businesses,
+    organizations and individuals establish a strong
+    online presence through creativity, technology
+    and innovation.
+  </p>
+</section>
+
+<section class="contact" id="contact">
+  <h2 class="section-title">Let's Build Something Great.</h2>
+
+  <p>
+    Have a project in mind? We'd love to hear about it.
+  </p>
+
+  <a href="mailto:YOUR_EMAIL@example.com" class="btn">
+    Contact DONECX →
+  </a>
+</section>
+</main>
+
+<footer>
+  © 2026 DONECX Digital Solutions.
+  All rights reserved.
+</footer>
+
+</body>
+</html>
